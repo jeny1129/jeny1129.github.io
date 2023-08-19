@@ -1,0 +1,47 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1d5d7d;
+  color: rgba(171, 28, 28, 0.56);
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+.content {
+  width: 90%;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.education {
+  padding: 20px; /* Add padding to create space around the content */
+  background-color: #8f2a2a; /* Set a background color for the section */
+  border-radius: 10px; /* Add rounded corners to the section */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow effect */
+}
+
+.education h2 {
+  color: #17706c; /* Change the color of the heading */
+  font-size: 24px; /* Adjust the font size of the heading */
+}
+
+.education p {
+  color: #666; /* Change the color of the paragraph text */
+}
+
+/* Add more styling based on your preferences */
+/* Implement responsive design using media queries */
