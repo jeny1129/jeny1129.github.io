@@ -7,6 +7,47 @@
 
 <!-- Styles -->
 <style>
+        .gallery-section h2 {
+        margin-bottom: 10px;
+    }
+
+    .gallery-intro {
+        margin-bottom: 25px;
+        color: #555;
+    }
+
+    .gallery-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+
+    .shot {
+        background: #f9f9ff;
+        border-radius: 8px;
+        padding: 12px;
+        box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .shot img {
+        width: 100%;
+        border-radius: 6px;
+        display: block;
+        margin-bottom: 8px;
+    }
+
+    .shot h4 {
+        margin: 0 0 4px;
+        font-size: 0.95rem;
+        color: #182848;
+    }
+
+    .shot p {
+        margin: 0;
+        font-size: 0.84rem;
+        color: #555;
+    }
+
     body {
         margin: 0;
         font-family: Arial, Helvetica, sans-serif;
@@ -149,7 +190,85 @@
     <p>Email: <strong>jenyrangani1@gmail.com</strong></p>
     <p>LinkedIn: <strong>linkedin.com/in/jeny-rangani</strong></p>
 </section>
+    
+<section class="section gallery-section">
+    <h2>Windows Troubleshooting Project – Evidence</h2>
+    <p class="gallery-intro">
+        These screenshots were captured from my Windows 10 virtual lab while practicing real-world IT support tasks,
+        including network troubleshooting, performance analysis, log investigation, startup diagnostics, and system repair.
+    </p>
 
+    <div class="gallery-grid">
+
+        <!-- Network Troubleshooting -->
+        <div class="shot">
+            <img src="screenshots/network-disabled.png" alt="Network adapter disabled">
+            <h4>Network Adapter Disabled</h4>
+            <p>Simulated a “No Internet” issue by disabling the network adapter to reproduce user connectivity problems.</p>
+        </div>
+
+        <div class="shot">
+            <img src="screenshots/ping-fail.png" alt="Ping failure">
+            <h4>Ping Test Failure</h4>
+            <p>Used <code>ping</code> to confirm loss of connectivity and validate that the issue was network-related.</p>
+        </div>
+
+        <div class="shot">
+            <img src="screenshots/ipconfig-no-ip.png" alt="IP config with no address">
+            <h4>IP Configuration Check</h4>
+            <p>Checked <code>ipconfig</code> to verify missing or invalid IPv4 address before restoring DHCP settings.</p>
+        </div>
+
+        <div class="shot">
+            <img src="screenshots/ping-success.png" alt="Ping success after fix">
+            <h4>Connectivity Restored</h4>
+            <p>Re-enabled the adapter and renewed the IP lease, confirming success with a working <code>ping</code>.</p>
+        </div>
+
+        <!-- Task Manager -->
+        <div class="shot">
+            <img src="screenshots/taskmanager-cpu.png" alt="Task Manager CPU usage">
+            <h4>Task Manager – CPU & Memory</h4>
+            <p>Used Task Manager to identify processes causing high CPU and memory usage during performance issues.</p>
+        </div>
+
+        <!-- Event Viewer -->
+        <div class="shot">
+            <img src="screenshots/eventviewer-error.png" alt="Event Viewer system error">
+            <h4>Event Viewer Log Analysis</h4>
+            <p>Reviewed System logs in Event Viewer to investigate warnings and errors related to services and drivers.</p>
+        </div>
+
+        <!-- msconfig -->
+        <div class="shot">
+            <img src="screenshots/msconfig-diagnostic.png" alt="msconfig diagnostic startup">
+            <h4>Diagnostic Startup Mode</h4>
+            <p>Configured Diagnostic startup in <code>msconfig</code> to load only basic services for troubleshooting.</p>
+        </div>
+
+        <div class="shot">
+            <img src="screenshots/msconfig-normal.png" alt="msconfig normal startup">
+            <h4>Restored Normal Startup</h4>
+            <p>Returned the system to Normal startup after testing to ensure standard user experience was restored.</p>
+        </div>
+
+        <!-- SFC & DISM -->
+        <div class="shot">
+            <img src="screenshots/sfc-scan.png" alt="SFC scan">
+            <h4>SFC System File Check</h4>
+            <p>Ran <code>sfc /scannow</code> to scan and repair corrupted system files as part of OS repair tasks.</p>
+        </div>
+
+        <div class="shot">
+            <img src="screenshots/dism-restore.png" alt="DISM restore health">
+            <h4>DISM Restore Health</h4>
+            <p>Executed DISM to repair the Windows image and restore system integrity after troubleshooting issues.</p>
+        </div>
+
+    </div>
+</section>
+
+    
 <footer>
     © 2025 Jeny Rangani | IT Support Portfolio
 </footer>
